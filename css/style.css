@@ -1,4 +1,4 @@
-/* utilitys */
+/* utility Start */
 * {
  margin: 0;
  padding: 0;
@@ -9,4 +9,230 @@ body,
 html {
  font-family: "Raleway", sans-serif;
  font-size: 62.5%;
+}
+button {
+ font-family: "Raleway", sans-serif;
+}
+:root {
+ --primColor: #18db18;
+ --secColor: #444;
+ --whiteColor: #fff;
+ --grayColor: #252525;
+ --lightGrayColor: #707070;
+ --lightGreenColor: #30caa0;
+ --hoverColor: #14b814;
+ --blurColor: #262626bd;
+}
+
+.container {
+ max-width: 75%;
+ margin: 0 auto;
+}
+/* Utility End */
+
+/********** Header Start **********/
+.head {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../img/bg1.jpg");
+ /* height: 100vh; */
+ width: 100%;
+ background-size: cover;
+ background-position: center top;
+}
+
+/* navbar */
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 4rem 4rem;
+}
+
+/* nav-logo */
+.logo {
+ font-size: 1.7rem;
+ color: var(--whiteColor);
+ letter-spacing: 0.2rem;
+ cursor: pointer;
+}
+.logo .green {
+ color: var(--primColor);
+}
+
+/* nav ul */
+.nav-menu {
+ display: flex;
+}
+
+/* nav li */
+.nav-list {
+ list-style-type: none;
+ margin-left: 3rem;
+}
+
+/*nav a  */
+.nav-link {
+ text-decoration: none;
+ color: var(--whiteColor);
+ font-size: 1.5rem;
+ text-transform: uppercase;
+ transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+ color: var(--hoverColor);
+}
+
+/* login icon */
+.icon-logo {
+ margin-right: 0.4rem;
+ color: var(--primColor);
+}
+
+/* hamburger */
+.hamburger {
+ display: none;
+}
+.hamburger .bar {
+ display: block;
+ background-color: var(--whiteColor);
+ width: 2.3rem;
+ height: 0.3rem;
+ margin: 0.5rem auto;
+ transition: all 0.3s ease-in-out;
+}
+
+/* tagline */
+.tag-line {
+ padding: 21rem 0;
+ text-align: center;
+ color: var(--whiteColor);
+}
+.tag-line h2 {
+ font-size: 3.6rem;
+ margin-bottom: 2rem;
+}
+.tag-line p {
+ font-size: 2.2rem;
+ margin-bottom: 4rem;
+ line-height: 3rem;
+}
+
+/* button */
+.btn-style {
+ border: none;
+ padding: 1rem 3rem;
+ border-radius: 0.4rem;
+ font-size: 1.5rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.15rem;
+ color: var(--whiteColor);
+ cursor: pointer;
+ background-color: var(--primColor);
+ transition: all 0.3s ease-in-out;
+}
+.btn-style:hover {
+ background-color: transparent;
+ border: 2px solid var(--primColor);
+}
+
+/* filter search */
+.filter-form {
+ display: flex;
+ gap: 3rem;
+ background-color: var(--blurColor);
+ padding: 3rem;
+ border-radius: 0.3rem;
+}
+input {
+ width: 50%;
+ border: none;
+ border-radius: 0.3rem;
+ padding: 0.1rem 1rem;
+}
+select {
+ width: 25%;
+ border: none;
+ background-color: var(--whiteColor);
+ border-radius: 0.3rem;
+ padding: 0.1rem 1rem;
+}
+input:focus,
+select:focus {
+ outline: 1px solid var(--primColor);
+}
+
+section {
+ height: 100vh;
+}
+/********** Header End **********/
+
+/********** Media Query For Mobile **********/
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+ /********** Header Start **********/
+
+ /* navbar when active */
+ .navbar.active {
+  background-color: var(--blurColor);
+ }
+
+ /* nav-menu */
+ .nav-menu {
+  position: fixed;
+  top: 6.99rem;
+  left: -100%;
+  width: 100%;
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--blurColor);
+ }
+
+ /* hamburger */
+ .hamburger {
+  display: block;
+ }
+
+ /* hamburger cross when click*/
+ .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+ }
+ .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+ }
+ .hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+ }
+
+ /* nav menu when click on hamburger */
+ .nav-menu.active {
+  left: 0;
+ }
+
+ /* tagline */
+ .tag-line h2 {
+  font-size: 3rem;
+ }
+
+ .tag-line p {
+  font-size: 1.8rem;
+ }
+
+ /* filter-form  */
+ .filter-form {
+  flex-direction: column;
+ }
+
+ input {
+  width: 100%;
+  padding: 1rem;
+ }
+
+ select {
+  width: 100%;
+  padding: 1rem;
+ }
+ /********** Header End **********/
 }
