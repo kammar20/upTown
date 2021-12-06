@@ -302,7 +302,6 @@ select:focus {
 .service .service-title {
  width: 45%;
  color: var(--whiteColor);
-
  align-self: center;
 }
 
@@ -433,6 +432,11 @@ select:focus {
 
 /********** Media Query For Mobile **********/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
+ /* container */
+ .container {
+  max-width: 92%;
+ }
+
  /********** Header Start **********/
 
  /* navbar when active */
@@ -485,7 +489,9 @@ select:focus {
   font-size: 1.8rem;
  }
 
- /* filter-form  */
+ /********** Header End **********/
+
+ /********** Filter Form Start **********/
  .filter-form {
   flex-direction: column;
  }
@@ -499,5 +505,73 @@ select:focus {
   width: 100%;
   padding: 1rem;
  }
- /********** Header End **********/
+ /********** Filter Form  End **********/
+
+ /********** Section1 Start **********/
+ .sec1-recent-property p {
+  margin-bottom: 2rem;
+ }
+
+ .recent-sale {
+  flex-flow: column nowrap;
+ }
+
+ .common-img {
+  width: 100%;
+  margin-bottom: 3rem;
+ }
+ .common-img .sale-status-rent,
+ .common-img .sale-status-sale {
+  padding: 1rem 2rem;
+ }
+
+ .common-img .property-info .info h5 {
+  font-size: 1.3rem;
+ }
+ .common-img .property-info .info p {
+  font-size: 1.1rem;
+ }
+
+ .common-img .property-info .price {
+  padding: 1rem;
+  font-size: 1.3rem;
+ }
+ .img4-box {
+  margin-bottom: 10rem;
+ }
+ /********** Section1 End **********/
+
+ /********** Section2 Start **********/
+
+ .sec2 {
+  background-position: top center;
+ }
+ .sec2 .service {
+  flex-flow: column nowrap;
+  padding-top: 4rem;
+ }
+ .service .service-img {
+  width: 100%;
+  margin-bottom: 4rem;
+ }
+ .service .service-title {
+  width: 100%;
+ }
+
+ .service-item .service-item-text p {
+  margin-bottom: 4rem;
+ }
+ /********** Section2 End **********/
+
+ /********** Section3 Start **********/
+ .sec3 h3 {
+  padding-top: 5rem;
+ }
+ .sec3-featured {
+  flex-flow: column nowrap;
+ }
+ .sec3-featured .common-box {
+  width: 100%;
+ }
+ /********** Section3 End **********/
 }
