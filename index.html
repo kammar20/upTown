@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./css/style.css" />
  </head>
  <body>
-  <!-- Header Start -->
+  <!--********** Header Start **********-->
   <header class="head">
    <nav class="navbar">
     <div class="logo">
@@ -64,29 +64,396 @@
     </p>
     <button class="btn-style">View Details</button>
    </div>
+  </header>
+  <!--********** Header End **********-->
 
-   <!-- filter search -->
-   <div class="filter-search">
-    <div class="container">
-     <form class="filter-form">
-      <input
-       type="text"
-       placeholder="Enter a street name, address number or keyword"
-      />
-      <select>
-       <option value="City">City</option>
-      </select>
-      <select>
-       <option value="City">State</option>
-      </select>
-      <button class="btn-style">SEARCH</button>
-     </form>
+  <!--********** Filter Search Start **********-->
+  <div class="filter-search">
+   <div class="container">
+    <form class="filter-form">
+     <input
+      type="text"
+      placeholder="Enter a street name, address number or keyword"
+     />
+     <select>
+      <option value="City">City</option>
+     </select>
+     <select>
+      <option value="City">State</option>
+     </select>
+     <button class="btn-style">SEARCH</button>
+    </form>
+   </div>
+  </div>
+  <!--********** Filter Search End **********-->
+
+  <!--********** Section 1 Start **********-->
+
+  <section class="sec1-recent-property">
+   <h3>RECENT PROPERTIES</h3>
+   <p>Discover how much the latest properties have been sold for</p>
+   <div class="container">
+    <div class="recent-sale">
+     <div class="img1-box common-img">
+      <div class="sale-status-sale">FOR SALE</div>
+      <div class="property-info">
+       <div class="info">
+        <h5>176 Kingsberry, Dr Anderson</h5>
+        <p><i class="fas fa-map-pin location-icon"></i> Rochester, NY 14626</p>
+       </div>
+       <div class="price">$1,777,00</div>
+      </div>
+     </div>
+     <div class="img2-box common-img">
+      <div class="sale-status-rent">FOR RENT</div>
+      <div class="property-info">
+       <div class="info">
+        <h5>45 Lianne Dr, Greece Street</h5>
+        <p><i class="fas fa-map-pin location-icon"></i> Tasley, VA 23441</p>
+       </div>
+       <div class="price">$1255/month</div>
+      </div>
+     </div>
+     <div class="img3-box common-img">
+      <div class="sale-status-sale">FOR SALE</div>
+      <div class="property-info">
+       <div class="info">
+        <h5>6101 Aqua Ave Apt 603</h5>
+        <p>
+         <i class="fas fa-map-pin location-icon"></i> Miami Beach, FL 33141
+        </p>
+       </div>
+       <div class="price">$150,000</div>
+      </div>
+     </div>
+     <div class="img4-box common-img">
+      <div class="sale-status-rent">FOR RENT</div>
+      <div class="property-info">
+       <div class="info">
+        <h5>339 N Oakhurst Dr Apt 303</h5>
+        <p>
+         <i class="fas fa-map-pin location-icon"></i> Beverly Hills, CA 90210
+        </p>
+       </div>
+       <div class="price">$3000/month</div>
+      </div>
+     </div>
     </div>
    </div>
-  </header>
+  </section>
+  <!--********** Section 1 End **********-->
 
-  <!-- Header End -->
-  <section></section>
+  <!--********** Section 2 Start **********-->
+
+  <section class="sec2">
+   <div class="container">
+    <div class="service">
+     <div class="service-img">
+      <img src="./img/service.webp" alt="" />
+     </div>
+
+     <div class="service-title">
+      <h3>Our Services</h3>
+      <p>We provide the perfect service for</p>
+
+      <div class="service-item">
+       <i class="fas fa-comments service-icon"></i>
+
+       <div class="service-item-text">
+        <h5>Consultant Service</h5>
+        <p>
+         In Aenean purus, pretium sito amet sapien denim consectet sed <br />
+         urna placerat sodales magna leo.
+        </p>
+       </div>
+      </div>
+      <div class="service-item">
+       <i class="fas fa-home service-icon"></i>
+       <div class="service-item-text">
+        <h5>Properties Management</h5>
+        <p>
+         In Aenean purus, pretium sito amet sapien denim consectet sed <br />
+         urna placerat sodales magna leo.
+        </p>
+       </div>
+      </div>
+      <div class="service-item">
+       <i class="fas fa-briefcase service-icon"></i>
+
+       <div class="service-item-text">
+        <h5>Renting and Selling</h5>
+        <p>
+         In Aenean purus, pretium sito amet sapien denim consectet sed <br />
+         urna placerat sodales magna leo.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!--********** Section 2 End **********-->
+
+  <!--********** Section 3 Start **********-->
+  <div class="container">
+   <!-- section 3 heading -->
+   <section class="sec3">
+    <h3>FEATURED LISTINGS</h3>
+    <p class="center">
+     Browse houses and flats for sale and to rent in your area
+    </p>
+
+    <!-- property gallery -->
+    <div class="sec3-featured">
+     <!-- property 1 / box 1 -->
+     <div class="box1 common-box">
+      <img src="./img/pic3.webp" alt="" />
+      <div class="text-wrapper">
+       <div class="featured-title">
+        <h5>1963 S Crescent Heights Blvd</h5>
+        <p>
+         <i class="fas fa-map-marker-alt featured-icon"></i>Los Angeles, CA
+         90034
+        </p>
+       </div>
+       <!-- room info -->
+       <div class="room-info-wrapper">
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-th featured-icon"></i> 800 Square foot
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-car featured-icon"></i>2 Garages
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bed featured-icon"></i>10 Bedrooms
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bath featured-icon"></i>6 Bathrooms
+         </p>
+        </div>
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-user featured-icon"></i>Tony Holland
+         </p>
+         <p class="room-feature">
+          <i class="fa fa-clock-o featured-icon"></i> 1 days ago
+         </p>
+        </div>
+       </div>
+       <!-- room price -->
+       <div class="room-price">$1,200,000</div>
+      </div>
+     </div>
+
+     <!-- property 2 / box 2 -->
+     <div class="box2 common-box">
+      <img src="./img/pic3.webp" alt="" />
+      <div class="text-wrapper">
+       <div class="featured-title">
+        <h5>1963 S Crescent Heights Blvd</h5>
+        <p>
+         <i class="fas fa-map-marker-alt featured-icon"></i>Los Angeles, CA
+         90034
+        </p>
+       </div>
+       <!-- room info -->
+       <div class="room-info-wrapper">
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-th featured-icon"></i> 800 Square foot
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-car featured-icon"></i>2 Garages
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bed featured-icon"></i>10 Bedrooms
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bath featured-icon"></i>6 Bathrooms
+         </p>
+        </div>
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-user featured-icon"></i>Tony Holland
+         </p>
+         <p class="room-feature">
+          <i class="fa fa-clock-o featured-icon"></i> 1 days ago
+         </p>
+        </div>
+       </div>
+       <!-- room price -->
+       <div class="room-price">$1,200,000</div>
+      </div>
+     </div>
+     <!-- property 3 / box 3 -->
+     <div class="box3 common-box">
+      <img src="./img/pic3.webp" alt="" />
+      <div class="text-wrapper">
+       <div class="featured-title">
+        <h5>1963 S Crescent Heights Blvd</h5>
+        <p>
+         <i class="fas fa-map-marker-alt featured-icon"></i>Los Angeles, CA
+         90034
+        </p>
+       </div>
+       <!-- room info -->
+       <div class="room-info-wrapper">
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-th featured-icon"></i> 800 Square foot
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-car featured-icon"></i>2 Garages
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bed featured-icon"></i>10 Bedrooms
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bath featured-icon"></i>6 Bathrooms
+         </p>
+        </div>
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-user featured-icon"></i>Tony Holland
+         </p>
+         <p class="room-feature">
+          <i class="fa fa-clock-o featured-icon"></i> 1 days ago
+         </p>
+        </div>
+       </div>
+       <!-- room price -->
+       <div class="room-price">$1,200,000</div>
+      </div>
+     </div>
+
+     <!-- property 4 / box 4 -->
+     <div class="box4 common-box">
+      <img src="./img/pic3.webp" alt="" />
+      <div class="text-wrapper">
+       <div class="featured-title">
+        <h5>1963 S Crescent Heights Blvd</h5>
+        <p>
+         <i class="fas fa-map-marker-alt featured-icon"></i>Los Angeles, CA
+         90034
+        </p>
+       </div>
+       <!-- room info -->
+       <div class="room-info-wrapper">
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-th featured-icon"></i> 800 Square foot
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-car featured-icon"></i>2 Garages
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bed featured-icon"></i>10 Bedrooms
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bath featured-icon"></i>6 Bathrooms
+         </p>
+        </div>
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-user featured-icon"></i>Tony Holland
+         </p>
+         <p class="room-feature">
+          <i class="fa fa-clock-o featured-icon"></i> 1 days ago
+         </p>
+        </div>
+       </div>
+       <!-- room price -->
+       <div class="room-price">$1,200,000</div>
+      </div>
+     </div>
+
+     <!-- property 5 / box 5 -->
+     <div class="box5 common-box">
+      <img src="./img/pic3.webp" alt="" />
+      <div class="text-wrapper">
+       <div class="featured-title">
+        <h5>1963 S Crescent Heights Blvd</h5>
+        <p>
+         <i class="fas fa-map-marker-alt featured-icon"></i>Los Angeles, CA
+         90034
+        </p>
+       </div>
+       <!-- room info -->
+       <div class="room-info-wrapper">
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-th featured-icon"></i> 800 Square foot
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-car featured-icon"></i>2 Garages
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bed featured-icon"></i>10 Bedrooms
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bath featured-icon"></i>6 Bathrooms
+         </p>
+        </div>
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-user featured-icon"></i>Tony Holland
+         </p>
+         <p class="room-feature">
+          <i class="fa fa-clock-o featured-icon"></i> 1 days ago
+         </p>
+        </div>
+       </div>
+       <!-- room price -->
+       <div class="room-price">$1,200,000</div>
+      </div>
+     </div>
+
+     <!-- property 6 / box 6 -->
+     <div class="box6 common-box">
+      <img src="./img/pic3.webp" alt="" />
+      <div class="text-wrapper">
+       <div class="featured-title">
+        <h5>1963 S Crescent Heights Blvd</h5>
+        <p>
+         <i class="fas fa-map-marker-alt featured-icon"></i>Los Angeles, CA
+         90034
+        </p>
+       </div>
+       <!-- room info -->
+       <div class="room-info-wrapper">
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-th featured-icon"></i> 800 Square foot
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-car featured-icon"></i>2 Garages
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bed featured-icon"></i>10 Bedrooms
+         </p>
+         <p class="room-feature">
+          <i class="fas fa-bath featured-icon"></i>6 Bathrooms
+         </p>
+        </div>
+        <div class="room-info">
+         <p class="room-feature">
+          <i class="fas fa-user featured-icon"></i>Tony Holland
+         </p>
+         <p class="room-feature">
+          <i class="fa fa-clock-o featured-icon"></i> 1 days ago
+         </p>
+        </div>
+       </div>
+       <!-- room price -->
+       <div class="room-price">$1,200,000</div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <!--********** Section 3 End **********-->
+
   <script src="app.js"></script>
  </body>
 </html>

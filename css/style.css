@@ -21,12 +21,13 @@ button {
  --lightGrayColor: #707070;
  --lightGreenColor: #30caa0;
  --hoverColor: #14b814;
- --blurColor: #262626bd;
+ --blurColor: #262626fa;
 }
 
 .container {
  max-width: 75%;
  margin: 0 auto;
+ padding: 3% 0;
 }
 /* Utility End */
 
@@ -104,7 +105,7 @@ button {
 
 /* tagline */
 .tag-line {
- padding: 21rem 0;
+ padding: 20rem 2% 30rem;
  text-align: center;
  color: var(--whiteColor);
 }
@@ -137,7 +138,15 @@ button {
  border: 2px solid var(--primColor);
 }
 
-/* filter search */
+/********** Header End **********/
+
+/********** filter search Start **********/
+
+.filter-search {
+ position: relative;
+ top: -9.5rem;
+ z-index: 1;
+}
 .filter-form {
  display: flex;
  gap: 3rem;
@@ -162,11 +171,265 @@ input:focus,
 select:focus {
  outline: 1px solid var(--primColor);
 }
+/********** filter search End **********/
 
-section {
- height: 100vh;
+/********** Section 1 Start **********/
+
+.sec1-recent-property h3 {
+ font-size: 3.5rem;
+ text-align: center;
+ font-weight: 500;
+ margin-bottom: 1.5rem;
 }
-/********** Header End **********/
+.sec1-recent-property p {
+ font-size: 1.4rem;
+ text-align: center;
+}
+
+.recent-sale {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+}
+
+/* img common property */
+.common-img {
+ width: 49%;
+ height: 27rem;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center top;
+ position: relative;
+}
+
+.common-img .sale-status-sale {
+ display: inline-block;
+ background-color: orangered;
+ color: var(--whiteColor);
+ padding: 1rem 2.5rem;
+ font-size: 1.2rem;
+ font-weight: 700;
+ margin: 2.5rem;
+}
+.common-img .sale-status-rent {
+ display: inline-block;
+ background-color: orange;
+ color: var(--whiteColor);
+ padding: 1rem 2.5rem;
+ font-size: 1.2rem;
+ font-weight: 700;
+ margin: 2.5rem;
+}
+
+.common-img .property-info {
+ width: 100%;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ display: flex;
+ justify-content: space-between;
+ padding: 2rem;
+}
+.common-img .property-info .info h5 {
+ font-size: 2rem;
+ color: var(--whiteColor);
+ margin-bottom: 1.5rem;
+ font-weight: 500;
+}
+
+.common-img .property-info .info p {
+ font-size: 1.8rem;
+ color: var(--whiteColor);
+ text-align: left;
+}
+
+.common-img .property-info .info .location-icon {
+ color: var(--lightGreenColor);
+ size: 2rem;
+ margin-right: 0.5rem;
+}
+
+.common-img .property-info .price {
+ background-color: var(--lightGreenColor);
+ padding: 1.2rem;
+ text-align: center;
+ border-radius: 0.2rem;
+ font-size: 1.8rem;
+ align-self: center;
+}
+/* img common property ends */
+
+.img1-box {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../img/pic1.webp");
+ margin-bottom: 2%;
+}
+.img2-box {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../img/pic2.webp");
+}
+.img3-box {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("../img/pic3.webp");
+}
+.img4-box {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../img/pic6.jpg");
+}
+
+/********** Section 1 End **********/
+
+/********** Section 2 Start **********/
+.sec2 {
+ background-image: url("../img/service-bg.webp");
+ width: 100%;
+}
+.sec2 .service {
+ display: flex;
+ justify-content: space-between;
+ margin: 4rem auto;
+}
+
+/* img */
+.service .service-img {
+ width: 50%;
+}
+.service .service-img img {
+ width: 100%;
+}
+
+/* service text title*/
+.service .service-title {
+ width: 45%;
+ color: var(--whiteColor);
+
+ align-self: center;
+}
+
+.service .service-title h3 {
+ font-size: 3.5rem;
+ text-transform: uppercase;
+ color: var(--whiteColor);
+ font-weight: 400;
+ margin-bottom: 1.5rem;
+}
+
+.service .service-title p {
+ font-size: 1.4rem;
+ font-weight: 400;
+ margin-bottom: 3.5rem;
+}
+
+/* service item icon */
+.service-title .service-item {
+ display: flex;
+ justify-content: flex-start;
+}
+
+.service-item .service-icon {
+ padding: 2rem;
+ background-color: var(--lightGreenColor);
+ border-radius: 100%;
+ align-self: flex-start;
+ border: none;
+ font-size: 2rem;
+ margin-right: 2rem;
+}
+
+.service-item .service-item-text h5 {
+ font-size: 1.8rem;
+ font-weight: 400;
+ margin-bottom: 1rem;
+}
+
+.service-item .service-item-text p {
+ margin-bottom: 3rem;
+ font-size: 1.4rem;
+}
+
+/********** Section 2 End **********/
+
+/********** Section 3 Start **********/
+.sec3 h3 {
+ font-size: 3rem;
+ font-weight: 400;
+ text-align: center;
+ margin-bottom: 2rem;
+}
+.sec3 .center {
+ font-size: 1.4rem;
+ text-align: center;
+ margin-bottom: 5rem;
+ color: var(--lightGrayColor);
+}
+.sec3-featured {
+ display: flex;
+ justify-content: space-between;
+ flex-flow: row wrap;
+}
+/* common style */
+.sec3-featured .common-box {
+ width: 32%;
+}
+.sec3-featured .common-box img {
+ width: 100%;
+ vertical-align: bottom;
+}
+
+.text-wrapper {
+ border-left: 1px solid #ebebeb;
+ border-right: 1px solid #ebebeb;
+}
+
+.common-box .featured-title {
+ text-align: center;
+ padding: 1rem;
+}
+
+.common-box .featured-title h5 {
+ font-size: 2rem;
+ font-weight: 400;
+ margin-bottom: 1rem;
+}
+.common-box .featured-title p {
+ font-size: 1.4rem;
+ margin-bottom: 2rem;
+}
+.featured-icon {
+ color: var(--lightGreenColor);
+ margin-right: 1rem;
+}
+.room-info-wrapper {
+ padding: 2.5rem;
+}
+
+.room-info {
+ display: flex;
+ justify-content: space-between;
+ flex-flow: row wrap;
+ border-top: 1px solid #ebebeb;
+ padding-top: 2rem;
+}
+
+.room-info .room-feature {
+ display: inline-block;
+ width: 44%;
+ font-size: 1.4rem;
+ margin-bottom: 2rem;
+ color: var(--lightGrayColor);
+}
+
+.common-box .room-price {
+ text-align: center;
+ background-color: var(--lightGreenColor);
+ display: block;
+ font-size: 1.8rem;
+ font-weight: 600;
+ color: var(--whiteColor);
+ padding: 1.3rem;
+ margin-bottom: 5rem;
+}
+/********** Section 3 End **********/
 
 /********** Media Query For Mobile **********/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
@@ -180,16 +443,18 @@ section {
  /* nav-menu */
  .nav-menu {
   position: fixed;
-  top: 6.99rem;
+  top: 10.99rem;
   left: -100%;
   width: 100%;
   height: 90%;
   flex-direction: column;
-  justify-content: space-around;
+
   align-items: center;
   background-color: var(--blurColor);
  }
-
+ .nav-list {
+  margin: 3rem auto;
+ }
  /* hamburger */
  .hamburger {
   display: block;
