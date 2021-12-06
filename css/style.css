@@ -34,7 +34,7 @@ button {
 /********** Header Start **********/
 .head {
  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("../img/bg1.jpg");
+  url("../img/bg-main.jpg");
  /* height: 100vh; */
  width: 100%;
  background-size: cover;
@@ -260,21 +260,21 @@ select:focus {
 /* img common property ends */
 
 .img1-box {
- background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-  url("../img/pic1.webp");
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../img/img1.jpg");
  margin-bottom: 2%;
 }
 .img2-box {
  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("../img/pic2.webp");
+  url("../img/img2.jpg");
 }
 .img3-box {
- background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url("../img/pic3.webp");
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../img/img3.jpg");
 }
 .img4-box {
  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("../img/pic6.jpg");
+  url("../img/img4.jpg");
 }
 
 /********** Section 1 End **********/
@@ -429,6 +429,17 @@ select:focus {
  margin-bottom: 5rem;
 }
 /********** Section 3 End **********/
+
+/* demo */
+#owl-demo .item {
+ margin: 3px;
+}
+#owl-demo .item img {
+ display: block;
+ width: 30%;
+ height: auto;
+}
+/* demo */
 
 /********** Media Query For Mobile **********/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
