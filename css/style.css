@@ -10,18 +10,18 @@ html {
  font-family: "Raleway", sans-serif;
  font-size: 62.5%;
 }
-button {
+button,
+input,
+textarea {
  font-family: "Raleway", sans-serif;
 }
 :root {
- /* --primColor: #18db18; */
  --primColor: #30caa0;
  --secColor: #444;
  --whiteColor: #fff;
  --grayColor: #252525;
  --lightGrayColor: #707070;
  --lightGreenColor: #30caa0;
- /* --hoverColor: #14b814; */
  --hoverColor: #30caa0;
  --blurColor: #262626fa;
 }
@@ -33,71 +33,10 @@ button {
 }
 /* Utility End */
 
-/********** feature page 1 Start **********/
-.feature-head {
- background-image: url("../img/feature-bg.webp");
- width: 100%;
- background-size: cover;
- background-position: center top;
-}
-
-.feature-tag h3 {
- color: var(--whiteColor);
- font-size: 4rem;
- font-weight: 400;
- text-align: center;
- padding: 10rem 0 20rem;
-}
-
-.top-notation {
- margin-bottom: 5rem;
-}
-.top-icon {
- font-size: 1.5rem;
- margin-right: 1rem;
- color: var(--lightGreenColor);
-}
-.top-span {
- color: var(--grayColor);
- text-decoration: none;
- font-size: 1.5rem;
- margin-right: 2rem;
-}
-.top-current:hover {
- text-decoration: underline;
- color: var(--lightGreenColor);
-}
-
-.pagination {
- display: flex;
- justify-content: center;
- align-items: center;
- margin-bottom: 10rem;
-}
-
-.pagination a {
- color: black;
- padding: 0.8rem 1.6rem;
- text-decoration: none;
- transition: all 0.3s;
- border: 1px solid #888;
- margin: 0 0.5rem;
- font-size: 1.5rem;
-}
-
-.pagination .current,
-.pagination a:hover {
- color: var(--lightGreenColor);
- border-color: var(--lightGreenColor);
-}
-
-/********** Feature page 2 end **********/
-
 /********** Header Start **********/
 .head {
  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url("../img/bg-main.jpg");
- /* height: 100vh; */
  width: 100%;
  background-size: cover;
  background-position: center top;
@@ -379,7 +318,6 @@ select:focus {
 
 .service .service-title p {
  font-size: 1.4rem;
- font-weight: 400;
  margin-bottom: 3.5rem;
 }
 
@@ -536,7 +474,8 @@ select:focus {
 /********** Section 4 End **********/
 
 /********** Section 5 Start **********/
-.sec5 {
+
+/* .sec5 {
  width: 100%;
  text-align: center;
  padding-bottom: 10rem;
@@ -555,7 +494,7 @@ select:focus {
 }
 
 .places-gallery {
- /* background-color: hotpink; */
+ background-color: hotpink;
  display: grid;
  gap: 2rem;
  grid-template-columns: 1.5fr 1.5fr 3fr;
@@ -579,22 +518,23 @@ select:focus {
  height: 600px;
 }
 .places3 {
- /* background-color: #222; */
+ background-color: #222;
  background-image: url("../img/sanjose.jpg");
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center center;
 }
 .places4 {
- /* background-color: darkmagenta; */
+ background-color: darkmagenta;
  background-image: url("../img/stlouis.jpg");
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center center;
- /* grid-column-start: 3;
+ grid-column-start: 3;
  grid-row-start: 1;
- grid-row-end: span 2; */
-}
+ grid-row-end: span 2;
+} */
+
 /********** Section 5 End **********/
 
 /********** Section 6 Start **********/
@@ -609,7 +549,6 @@ select:focus {
  width: 100%;
  padding: 2rem 2rem;
  margin: auto;
- /* background-color: red; */
 }
 .testim .arrow {
  display: block;
@@ -702,6 +641,8 @@ select:focus {
  color: var(--whiteColor);
  width: 80%;
  margin: auto;
+ line-height: 3rem;
+ letter-spacing: 0.1rem;
 }
 
 .testim .cont div.active .img img {
@@ -804,6 +745,7 @@ select:focus {
  display: flex;
  justify-content: space-between;
  text-align: left;
+ flex-flow: row wrap;
 }
 .news-block .block-common {
  width: 31%;
@@ -839,6 +781,7 @@ select:focus {
  font-size: 1.4rem;
  color: var(--grayColor);
  line-height: 2.2rem;
+ margin-bottom: 4rem;
 }
 /********** Section 7 End **********/
 
@@ -939,7 +882,7 @@ select:focus {
  display: flex;
  justify-content: flex-start;
  position: relative;
- margin-bottom: 12rem;
+ margin-bottom: 8rem;
 }
 .news-letter .news-input {
  padding: 1rem 1.8rem;
@@ -949,6 +892,7 @@ select:focus {
 .news-letter .news-input:focus {
  outline-color: var(--lightGreenColor);
 }
+
 .news-letter .news-button {
  padding: 1rem 1.4rem;
  position: absolute;
@@ -989,6 +933,235 @@ select:focus {
 }
 /********** Section 8 End Footer **********/
 
+/********** New Page **********/
+
+/********** feature page 2 Start **********/
+.new-head {
+ background-image: url("../img/feature-bg.webp");
+ width: 100%;
+ background-size: cover;
+ background-position: center top;
+}
+
+.new-tag h3 {
+ color: var(--whiteColor);
+ font-size: 4rem;
+ font-weight: 400;
+ text-align: center;
+ padding: 10rem;
+ letter-spacing: 0.1rem;
+}
+
+.top-notation {
+ margin-bottom: 5rem;
+}
+.top-icon {
+ font-size: 1.5rem;
+ margin-right: 1rem;
+ color: var(--lightGreenColor);
+}
+.top-span {
+ color: var(--grayColor);
+ text-decoration: none;
+ font-size: 1.5rem;
+ margin-right: 2rem;
+}
+.top-current:hover {
+ text-decoration: underline;
+ color: var(--lightGreenColor);
+}
+
+.pagination {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 10rem;
+}
+
+.pagination a {
+ color: black;
+ padding: 0.8rem 1.6rem;
+ text-decoration: none;
+ transition: all 0.3s;
+ border: 1px solid #888;
+ margin: 0 0.5rem;
+ font-size: 1.5rem;
+}
+
+.pagination .current,
+.pagination a:hover {
+ color: var(--lightGreenColor);
+ border-color: var(--lightGreenColor);
+}
+
+/********** Feature page 2 end **********/
+
+/********** About Page 2 Start **********/
+
+.about-pic {
+ width: 100%;
+ margin-bottom: 3rem;
+}
+
+.about-info {
+ display: flex;
+ justify-content: space-between;
+}
+.about-common {
+ width: 47%;
+}
+
+.about-common h3 {
+ font-size: 3rem;
+ font-weight: 500;
+ margin-bottom: 4rem;
+ letter-spacing: 0.1rem;
+}
+.about-common p {
+ font-size: 1.4rem;
+ line-height: 2rem;
+ letter-spacing: 0.1rem;
+ margin-bottom: 4rem;
+}
+.quality {
+ font-size: 1.4rem;
+ line-height: 3rem;
+ list-style-type: none;
+}
+.quality li:nth-child(4) {
+ margin-bottom: 4rem;
+}
+.quality-icon {
+ color: var(--lightGreenColor);
+ margin-right: 0.4rem;
+ font-size: 1.2rem;
+}
+
+/* about sec3 */
+.about-sec3 {
+ width: 100%;
+ text-align: center;
+ padding-bottom: 6rem;
+}
+.about-sec3 h3 {
+ font-size: 3rem;
+ font-weight: 500;
+ color: var(--grayColor);
+ margin-bottom: 2rem;
+ padding-top: 10rem;
+}
+.about-sec3 p {
+ font-size: 1.4rem;
+ color: var(--secColor);
+ margin-bottom: 3rem;
+}
+
+.agent-gallery {
+ display: flex;
+ justify-content: space-between;
+}
+
+.agent-gallery .agent-common {
+ width: 24%;
+ text-align: left;
+}
+
+.agent-gallery .agent-common img {
+ width: 100%;
+ margin-bottom: 2rem;
+}
+
+.agent-gallery .agent-common h5 {
+ font-size: 2rem;
+ font-weight: 400;
+ margin-bottom: 1rem;
+}
+
+.agent-gallery .agent-common p {
+ font-size: 1.4rem;
+ margin-bottom: 1rem;
+ letter-spacing: 0.1rem;
+}
+
+.agent-hr {
+ width: 15%;
+ margin-bottom: 3rem;
+ color: var(--lightGreenColor);
+}
+
+.agent-icon {
+ color: var(--lightGreenColor);
+ margin-right: 0.9rem;
+}
+/********** About Page 2 End **********/
+
+/********** Contact Page 2 start **********/
+.map {
+ margin-bottom: 7rem;
+}
+
+.contact-page-content {
+ display: flex;
+ justify-content: space-between;
+}
+.contact-common {
+ width: 48%;
+}
+.contact-common img {
+ width: 100%;
+ margin-bottom: 3rem;
+}
+.contact-common h3 {
+ font-size: 3rem;
+ font-weight: 400;
+ margin-bottom: 2rem;
+}
+.contact-common p {
+ font-size: 1.4rem;
+ margin-bottom: 2rem;
+}
+
+.form-group {
+ display: flex;
+ justify-content: space-between;
+}
+.form-group input {
+ width: 48%;
+ margin-bottom: 2rem;
+ padding: 1rem 1.5rem;
+ border: 1px solid var(--lightGrayColor);
+}
+
+.contact-page-form textarea {
+ display: block;
+ width: 100%;
+ margin-bottom: 2rem;
+ padding: 1rem 1.5rem;
+}
+
+.form-group .contact-input:focus {
+ border-color: var(--lightGreenColor);
+}
+
+.contact-page-form textarea:focus {
+ outline-color: var(--lightGreenColor);
+}
+
+.submit {
+ width: 100%;
+ padding: 1rem 1.5rem;
+ background-color: var(--primColor);
+ border: none;
+ color: var(--whiteColor);
+ font-weight: 500;
+ letter-spacing: 0.1rem;
+ cursor: pointer;
+}
+
+/********** Contact Page 2 End **********/
+
+/********** New Page End**********/
+
 /********** Media Query For Mobile **********/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
  /* container */
@@ -1013,13 +1186,14 @@ select:focus {
   flex-direction: column;
   align-items: center;
   background-color: var(--blurColor);
-  /* background-color: red; */
   z-index: 3;
  }
+
  .nav-list {
   margin: 3rem auto;
   text-align: center;
  }
+
  /* hamburger */
  .hamburger {
   display: block;
@@ -1188,16 +1362,20 @@ select:focus {
  .footer-content {
   flex-flow: column nowrap;
  }
+
  .footer-common {
   width: 100%;
  }
+
  .foot .main .social {
   max-width: 80%;
   margin-bottom: 4rem;
  }
+
  .contact h3 {
   margin-bottom: 3rem;
  }
+
  .contact p:nth-child(5) {
   margin-bottom: 4rem;
  }
@@ -1205,9 +1383,11 @@ select:focus {
  .popular-place h3 {
   margin-bottom: 3rem;
  }
+
  .popular-place .double-ul {
   max-width: 60%;
  }
+
  .double-ul .one li:nth-child(5),
  .double-ul .two li:nth-child(5) {
   margin-bottom: 4rem;
@@ -1235,4 +1415,291 @@ select:focus {
  }
 
  /********** Section8 End Footer**********/
+
+ /********** New Page**********/
+ /********** About**********/
+
+ .about-info {
+  flex-flow: column nowrap;
+ }
+
+ .about-common {
+  width: 100%;
+ }
+
+ .about-common h3 {
+  margin-bottom: 3rem;
+ }
+
+ .quality li {
+  text-align: justify;
+ }
+
+ /* agent info */
+ .agent-gallery {
+  flex-flow: column nowrap;
+ }
+
+ .agent-gallery .agent-common {
+  width: 100%;
+ }
+
+ .agent-gallery .agent-common img {
+  width: 100%;
+  margin-bottom: 2rem;
+ }
+
+ /* agent last p */
+ #p-last {
+  margin-bottom: 4rem;
+ }
+
+ /********** Contact**********/
+
+ /* map */
+ .map {
+  width: 100%;
+ }
+
+ /* Content Group */
+ .contact-page-content {
+  flex-flow: column nowrap;
+ }
+ .contact-common {
+  width: 100%;
+ }
+
+ /* img */
+ .contact-common img {
+  width: 100%;
+ }
+
+ /* form */
+ .form-group {
+  flex-flow: column nowrap;
+ }
+
+ .form-group input {
+  display: block;
+  width: 100%;
+ }
+ /********** New Page**********/
+}
+
+/********** Media Query For Tablets **********/
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+ /* container */
+ .container {
+  max-width: 92%;
+ }
+
+ /* filter search */
+ .filter-form {
+  flex-direction: column;
+ }
+ .filter-search input {
+  width: 100%;
+  padding: 1rem;
+ }
+
+ select {
+  width: 100%;
+  padding: 1rem;
+ }
+
+ /* sec1 */
+ .common-img {
+  width: 100%;
+  margin-bottom: 3rem;
+ }
+ .common-img .sale-status-rent,
+ .common-img .sale-status-sale {
+  padding: 1rem 2rem;
+ }
+
+ .common-img .property-info .info h5 {
+  font-size: 1.3rem;
+ }
+ .common-img .property-info .info p {
+  font-size: 1.1rem;
+ }
+
+ .common-img .property-info .price {
+  padding: 1rem;
+  font-size: 1.3rem;
+ }
+ .img4-box {
+  margin-bottom: 10rem;
+ }
+
+ /* sec2 */
+ .sec2 {
+  background-position: top center;
+ }
+ .sec2 .service {
+  flex-flow: column nowrap;
+  padding-top: 4rem;
+  text-align: center;
+ }
+
+ .service-item .service-item-text h5 {
+  text-align: left;
+ }
+
+ .service .service-img {
+  width: 100%;
+  margin-bottom: 4rem;
+ }
+
+ .service .service-title {
+  width: 100%;
+ }
+
+ .service-item .service-item-text p {
+  text-align: left;
+  margin-bottom: 4rem;
+ }
+
+ /* sec3 */
+ .sec3 h3 {
+  padding-top: 6rem;
+ }
+ .sec3-featured {
+  flex-flow: column nowrap;
+ }
+ .sec3-featured .common-box {
+  width: 100%;
+ }
+
+ /* sec4 */
+
+ .property-gallery {
+  flex-flow: column wrap;
+ }
+ .property-gallery .common-property {
+  width: 100%;
+ }
+
+ /* sec6 */
+ .testim .arrow {
+  top: 65%;
+ }
+
+ /* sec 7 */
+ .news-block {
+  flex-flow: column nowrap;
+ }
+ .news-block .block-common {
+  width: 100%;
+ }
+ .news-block p {
+  margin-bottom: 5rem;
+ }
+
+ /********** Section8 Start Footer **********/
+
+ .footer-content {
+  flex-flow: column nowrap;
+ }
+
+ .footer-common {
+  width: 100%;
+ }
+
+ .foot .main .social {
+  max-width: 80%;
+  margin-bottom: 4rem;
+ }
+
+ .contact h3 {
+  margin-bottom: 3rem;
+ }
+
+ .contact p:nth-child(5) {
+  margin-bottom: 4rem;
+ }
+
+ .popular-place h3 {
+  margin-bottom: 3rem;
+ }
+
+ .popular-place .double-ul {
+  max-width: 60%;
+ }
+
+ .double-ul .one li:nth-child(5),
+ .double-ul .two li:nth-child(5) {
+  margin-bottom: 4rem;
+ }
+
+ .news-letter p {
+  margin-bottom: 4rem;
+ }
+
+ .copyright {
+  flex-flow: column;
+  text-align: center;
+ }
+
+ .copyright p {
+  order: 2;
+ }
+
+ .footer-menu {
+  margin-bottom: 2rem;
+ }
+
+ .footer-list {
+  margin: auto;
+ }
+
+ /* new page  */
+ /* about */
+ .about-info {
+  flex-flow: column nowrap;
+ }
+ .about-common {
+  width: 100%;
+ }
+
+ .agent-gallery {
+  flex-flow: column wrap;
+ }
+ .agent-gallery .agent-common {
+  width: 100%;
+ }
+ .agent-common #p-last {
+  margin-bottom: 5rem;
+ }
+
+ /* new page  */
+ /* Contact */
+
+ /* map */
+ .map {
+  width: 100%;
+ }
+
+ /* Content Group */
+ .contact-page-content {
+  flex-flow: column nowrap;
+ }
+ .contact-common {
+  width: 100%;
+ }
+
+ /* img */
+ .contact-common img {
+  width: 100%;
+ }
+
+ /* form */
+ .form-group {
+  flex-flow: column nowrap;
+ }
+
+ .form-group input {
+  display: block;
+  width: 100%;
+ }
 }
