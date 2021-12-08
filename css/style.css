@@ -35,6 +35,7 @@ textarea {
 
 /********** Header Start **********/
 .head {
+ position: relative;
  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url("../img/bg-main.jpg");
  width: 100%;
@@ -44,19 +45,27 @@ textarea {
 
 /* navbar */
 .navbar {
+ width: 100%;
  display: flex;
  justify-content: space-between;
  align-items: center;
  padding: 4rem 4rem;
- position: relative;
+ z-index: 4;
+ position: fixed;
+ top: 0;
+ left: 0;
 }
 
 /* nav-logo */
 .logo {
+ position: relative;
+ transition: all 0.3s ease-in-out;
  font-size: 1.7rem;
  color: var(--whiteColor);
  letter-spacing: 0.2rem;
  cursor: pointer;
+ position: relative;
+ transition: all 0.3s ease-in-out;
 }
 .logo .green {
  color: var(--primColor);
@@ -65,12 +74,14 @@ textarea {
 /* nav ul */
 .nav-menu {
  display: flex;
+ position: relative;
 }
 
 /* nav li */
 .nav-list {
  list-style-type: none;
  margin-left: 3rem;
+ position: relative;
 }
 
 /*nav a  */
@@ -80,6 +91,7 @@ textarea {
  font-size: 1.5rem;
  text-transform: uppercase;
  transition: all 0.3s ease-in-out;
+ position: relative;
 }
 
 .nav-link:hover,
@@ -105,6 +117,27 @@ textarea {
  margin: 0.5rem auto;
  transition: all 0.3s ease-in-out;
 }
+
+/* for sticky navar bar big screen style */
+/* for navbar */
+.navbar.sticky {
+ padding: 3rem 4rem;
+ background-color: var(--whiteColor);
+ box-shadow: 0.1rem 0.1rem 1rem #666;
+}
+
+/* for logo and li color */
+.navbar.sticky .logo,
+.navbar.sticky .nav-link {
+ color: #252525;
+}
+
+/* for hover and active */
+.navbar.sticky .nav-link:hover,
+.navbar.sticky .nav-link.current {
+ color: var(--lightGreenColor);
+}
+/* for sticky navar bar big screen style */
 
 /* tagline */
 .tag-line {
@@ -474,66 +507,6 @@ select:focus {
 /********** Section 4 End **********/
 
 /********** Section 5 Start **********/
-
-/* .sec5 {
- width: 100%;
- text-align: center;
- padding-bottom: 10rem;
-}
-.sec5 h3 {
- font-size: 3rem;
- font-weight: 400;
- color: var(--grayColor);
- margin-bottom: 2rem;
- padding-top: 10rem;
-}
-.sec5 p {
- font-size: 1.4rem;
- color: var(--secColor);
- margin-bottom: 3rem;
-}
-
-.places-gallery {
- background-color: hotpink;
- display: grid;
- gap: 2rem;
- grid-template-columns: 1.5fr 1.5fr 3fr;
-}
-
-.places-common {
- padding: 10rem;
-}
-
-.places1 {
- background-image: url("../img/nyc.jpg");
- background-size: cover;
- grid-column: 1 / span 2;
-}
-.places2 {
- background-image: url("../img/florida.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center center;
- grid-row-end: span 2;
- height: 600px;
-}
-.places3 {
- background-color: #222;
- background-image: url("../img/sanjose.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center center;
-}
-.places4 {
- background-color: darkmagenta;
- background-image: url("../img/stlouis.jpg");
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center center;
- grid-column-start: 3;
- grid-row-start: 1;
- grid-row-end: span 2;
-} */
 
 /********** Section 5 End **********/
 
@@ -1170,23 +1143,55 @@ select:focus {
   max-width: 92%;
  }
 
- /********** Header Start **********/
-
- /* navbar when active */
- .navbar.active {
-  background-color: var(--blurColor);
+ /********** Navbar active and Sticky Condition for small screen **********/
+ /* nav menu when click on hamburger */
+ .nav-menu.active {
+  left: 0;
+  /* top: 2; */
  }
+
+ /* navbar when active on small screen*/
+ .navbar.active {
+  background-color: var(--grayColor);
+ }
+
+ /* navbar active then navlink (a)hover color and current color */
+ .navbar.active .nav-link:hover,
+ .navbar.active .nav-link.current {
+  color: var(--lightGreenColor);
+ }
+
+ /* when navbar active and sticky in both condition hamburger color */
+ .navbar.active .hamburger .bar,
+ .navbar.sticky .hamburger .bar {
+  background-color: var(--lightGreenColor);
+ }
+
+ /* when navabr active then logo and navlinkcolo */
+ .navbar.active .logo,
+ .navbar.active .nav-link {
+  color: var(--whiteColor);
+ }
+
+ /* when navbar sticky nav-menu (ul ) */
+ .navbar.sticky .nav-menu {
+  top: 9rem;
+ }
+
+ /********** Navbar active and Sticky Condition for small screen**********/
+
+ /********** Header Start **********/
 
  /* nav-menu */
  .nav-menu {
   position: fixed;
-  top: 10.99rem;
+  top: 10rem;
   left: -100%;
   width: 100%;
   height: 90%;
   flex-direction: column;
   align-items: center;
-  background-color: var(--blurColor);
+  background-color: var(--grayColor);
   z-index: 3;
  }
 
@@ -1209,11 +1214,6 @@ select:focus {
  }
  .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
- }
-
- /* nav menu when click on hamburger */
- .nav-menu.active {
-  left: 0;
  }
 
  /* tagline */
@@ -1591,9 +1591,6 @@ select:focus {
 
  /* sec 7 latest news*/
 
- .news-block .block9 {
-  display: none;
- }
  .news-block {
   flex-flow: row wrap;
  }
@@ -1713,11 +1710,3 @@ select:focus {
  }
 }
 /********** All Additional Pages Media Query (Which are new) Ends Here  **********/
-
-/* special case media */
-@media only screen and (min-device-width: 1025px) {
- /* sec 7 news block for hiding in big screen */
- .news-block .block4 {
-  display: none;
- }
-}

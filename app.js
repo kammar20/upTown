@@ -1,3 +1,4 @@
+// hamburger
 const hamBurger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navBar = document.querySelector(".navbar");
@@ -10,6 +11,7 @@ function mobileView() {
  navBar.classList.toggle("active");
 }
 
+// close nav when click
 const navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
@@ -20,7 +22,15 @@ function closeMenu() {
  navBar.classList.remove("active");
 }
 
-// coding with nick testimonial
+// sticky navbar
+window.addEventListener("scroll", stickyNav);
+
+function stickyNav() {
+ //  navbar alredy selected
+ navBar.classList.toggle("sticky", window.scrollY > 0);
+}
+
+// testimonial
 // vars
 ("use strict");
 var testim = document.getElementById("testim"),
@@ -36,7 +46,7 @@ var testim = document.getElementById("testim"),
  currentSlide = 0,
  currentActive = 0,
  testimTimer;
-// coding with nick
+
 window.onload = function () {
  // Testim Script
  function playSlide(slide) {
@@ -64,7 +74,7 @@ window.onload = function () {
    playSlide((currentSlide += 1));
   }, testimSpeed);
  }
- // coding with nick
+
  testimleftArrow.addEventListener("click", function () {
   playSlide((currentSlide -= 1));
  });
@@ -79,4 +89,3 @@ window.onload = function () {
  }
  playSlide(currentSlide);
 };
-// coding with nick
