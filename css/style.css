@@ -747,6 +747,7 @@ select:focus {
  text-align: left;
  flex-flow: row wrap;
 }
+
 .news-block .block-common {
  width: 31%;
 }
@@ -933,9 +934,9 @@ select:focus {
 }
 /********** Section 8 End Footer **********/
 
-/********** New Page **********/
+/********** All Additional Pages Styling (Which are new) Start From Here  **********/
 
-/********** feature page 2 Start **********/
+/* common for all additional pages */
 .new-head {
  background-image: url("../img/feature-bg.webp");
  width: 100%;
@@ -993,10 +994,9 @@ select:focus {
  color: var(--lightGreenColor);
  border-color: var(--lightGreenColor);
 }
+/* common for all additional pages */
 
-/********** Feature page 2 end **********/
-
-/********** About Page 2 Start **********/
+/********** "About" Page 2 Start **********/
 
 .about-pic {
  width: 100%;
@@ -1093,9 +1093,10 @@ select:focus {
  color: var(--lightGreenColor);
  margin-right: 0.9rem;
 }
-/********** About Page 2 End **********/
+/**********  "About" Page 2 End **********/
 
-/********** Contact Page 2 start **********/
+/**********  "Contact" Page 2 start **********/
+
 .map {
  margin-bottom: 7rem;
 }
@@ -1158,9 +1159,9 @@ select:focus {
  cursor: pointer;
 }
 
-/********** Contact Page 2 End **********/
+/********** "Contact" Page 2 End **********/
 
-/********** New Page End**********/
+/********** All Additional Pages Styling (Which are new) End Here  **********/
 
 /********** Media Query For Mobile **********/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
@@ -1242,9 +1243,10 @@ select:focus {
  }
  /********** Filter Form  End **********/
 
- /********** Section1 Start **********/
+ /********** Section1 Start recent property **********/
  .sec1-recent-property p {
   margin-bottom: 2rem;
+  font-size: 1.2rem;
  }
 
  .recent-sale {
@@ -1276,7 +1278,7 @@ select:focus {
  }
  /********** Section1 End **********/
 
- /********** Section2 Start **********/
+ /********** Section2 Start our service**********/
 
  .sec2 {
   background-position: top center;
@@ -1298,7 +1300,7 @@ select:focus {
  }
  /********** Section2 End **********/
 
- /********** Section3 Start **********/
+ /********** Section3 Start fearure listing**********/
  .sec3 h3 {
   padding-top: 5rem;
  }
@@ -1310,7 +1312,7 @@ select:focus {
  }
  /********** Section3 End **********/
 
- /********** Section4 Start **********/
+ /********** Section4 Start looking for Property**********/
 
  .property-gallery {
   flex-flow: column nowrap;
@@ -1324,9 +1326,10 @@ select:focus {
 
  /********** Section4 End **********/
 
- /********** Section6 Start **********/
+ /********** Section6 Start testimonal **********/
  .testim .arrow {
   font-size: 1.5rem;
+  top: 55%;
  }
  .testim .cont div p {
   line-height: 2.5rem;
@@ -1339,7 +1342,7 @@ select:focus {
  }
  /********** Section6 End **********/
 
- /********** Section7 Start **********/
+ /********** Section7 Start latest news**********/
  .sec7 {
   padding-bottom: 3rem;
  }
@@ -1416,9 +1419,9 @@ select:focus {
 
  /********** Section8 End Footer**********/
 
- /********** New Page**********/
- /********** About**********/
+ /********** All Additional Pages Media Query (Which are new) Start From Here  **********/
 
+ /********** About**********/
  .about-info {
   flex-flow: column nowrap;
  }
@@ -1455,7 +1458,6 @@ select:focus {
  }
 
  /********** Contact**********/
-
  /* map */
  .map {
   width: 100%;
@@ -1483,7 +1485,10 @@ select:focus {
   display: block;
   width: 100%;
  }
- /********** New Page**********/
+ .submit {
+  margin-bottom: 3rem;
+ }
+ /********** All Additional Pages Media Query (Which are new) End Here  **********/
 }
 
 /********** Media Query For Tablets **********/
@@ -1507,7 +1512,7 @@ select:focus {
   padding: 1rem;
  }
 
- /* sec1 */
+ /* sec1 recent property*/
  .common-img {
   width: 100%;
   margin-bottom: 3rem;
@@ -1532,7 +1537,7 @@ select:focus {
   margin-bottom: 10rem;
  }
 
- /* sec2 */
+ /* sec2 our service*/
  .sec2 {
   background-position: top center;
  }
@@ -1560,37 +1565,40 @@ select:focus {
   margin-bottom: 4rem;
  }
 
- /* sec3 */
+ /* sec3  featured listing*/
  .sec3 h3 {
   padding-top: 6rem;
  }
  .sec3-featured {
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
  }
  .sec3-featured .common-box {
-  width: 100%;
+  width: 49%;
  }
 
- /* sec4 */
-
+ /* sec4  looking property*/
  .property-gallery {
-  flex-flow: column wrap;
+  flex-flow: row wrap;
  }
  .property-gallery .common-property {
-  width: 100%;
+  width: 49%;
  }
 
- /* sec6 */
+ /* sec6  testimonial*/
  .testim .arrow {
   top: 65%;
  }
 
- /* sec 7 */
+ /* sec 7 latest news*/
+
+ .news-block .block9 {
+  display: none;
+ }
  .news-block {
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
  }
  .news-block .block-common {
-  width: 100%;
+  width: 49%;
  }
  .news-block p {
   margin-bottom: 5rem;
@@ -1599,11 +1607,11 @@ select:focus {
  /********** Section8 Start Footer **********/
 
  .footer-content {
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
  }
 
  .footer-common {
-  width: 100%;
+  width: 49%;
  }
 
  .foot .main .social {
@@ -1653,7 +1661,7 @@ select:focus {
   margin: auto;
  }
 
- /* new page  */
+ /********** All Additional Pages Media Query (Which are new) Start Here  **********/
  /* about */
  .about-info {
   flex-flow: column nowrap;
@@ -1663,10 +1671,10 @@ select:focus {
  }
 
  .agent-gallery {
-  flex-flow: column wrap;
+  flex-flow: row wrap;
  }
  .agent-gallery .agent-common {
-  width: 100%;
+  width: 49%;
  }
  .agent-common #p-last {
   margin-bottom: 5rem;
@@ -1691,6 +1699,7 @@ select:focus {
  /* img */
  .contact-common img {
   width: 100%;
+  height: 100%;
  }
 
  /* form */
@@ -1701,5 +1710,14 @@ select:focus {
  .form-group input {
   display: block;
   width: 100%;
+ }
+}
+/********** All Additional Pages Media Query (Which are new) Ends Here  **********/
+
+/* special case media */
+@media only screen and (min-device-width: 1025px) {
+ /* sec 7 news block for hiding in big screen */
+ .news-block .block4 {
+  display: none;
  }
 }
