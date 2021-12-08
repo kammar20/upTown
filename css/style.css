@@ -1147,7 +1147,6 @@ select:focus {
  /* nav menu when click on hamburger */
  .nav-menu.active {
   left: 0;
-  /* top: 2; */
  }
 
  /* navbar when active on small screen*/
