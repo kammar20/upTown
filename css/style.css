@@ -17,13 +17,12 @@ textarea {
 }
 :root {
  --primColor: #30caa0;
- --secColor: #444;
+ --hoverColor: #2db691;
  --whiteColor: #fff;
  --grayColor: #252525;
  --lightGrayColor: #707070;
- --lightGreenColor: #30caa0;
- --hoverColor: #30caa0;
- --blurColor: #262626fa;
+ --borderColor: #ebebeb;
+ --bgColor: #f7f7f7;
 }
 
 .container {
@@ -116,6 +115,7 @@ textarea {
  height: 0.3rem;
  margin: 0.5rem auto;
  transition: all 0.3s ease-in-out;
+ /* position: relative; */
 }
 
 /* for sticky navar bar big screen style */
@@ -129,19 +129,19 @@ textarea {
 /* for logo and li color */
 .navbar.sticky .logo,
 .navbar.sticky .nav-link {
- color: #252525;
+ color: var(--grayColor);
 }
 
 /* for hover and active */
 .navbar.sticky .nav-link:hover,
 .navbar.sticky .nav-link.current {
- color: var(--lightGreenColor);
+ color: var(--primColor);
 }
 /* for sticky navar bar big screen style */
 
 /* tagline */
 .tag-line {
- padding: 20rem 2% 30rem;
+ padding: 32rem 2% 30rem;
  text-align: center;
  color: var(--whiteColor);
 }
@@ -186,7 +186,7 @@ textarea {
 .filter-form {
  display: flex;
  gap: 3rem;
- background-color: var(--blurColor);
+ background-color: var(--grayColor);
  padding: 3rem;
  border-radius: 0.3rem;
 }
@@ -214,12 +214,14 @@ select:focus {
 .sec1-recent-property h3 {
  font-size: 3.5rem;
  text-align: center;
- font-weight: 500;
+ font-weight: 400;
  margin-bottom: 1.5rem;
+ color: var(--grayColor);
 }
 .sec1-recent-property p {
  font-size: 1.4rem;
  text-align: center;
+ color: var(--lightGrayColor);
 }
 
 .recent-sale {
@@ -236,11 +238,12 @@ select:focus {
  background-size: cover;
  background-position: center top;
  position: relative;
+ cursor: pointer;
 }
 
 .common-img .sale-status-sale {
  display: inline-block;
- background-color: orangered;
+ background-color: #ff4500;
  color: var(--whiteColor);
  padding: 1rem 2.5rem;
  font-size: 1.2rem;
@@ -249,7 +252,7 @@ select:focus {
 }
 .common-img .sale-status-rent {
  display: inline-block;
- background-color: orange;
+ background-color: #ffa500;
  color: var(--whiteColor);
  padding: 1rem 2.5rem;
  font-size: 1.2rem;
@@ -280,13 +283,13 @@ select:focus {
 }
 
 .common-img .property-info .info .location-icon {
- color: var(--lightGreenColor);
+ color: var(--primColor);
  size: 2rem;
  margin-right: 0.5rem;
 }
 
 .common-img .property-info .price {
- background-color: var(--lightGreenColor);
+ background-color: var(--primColor);
  padding: 1.2rem;
  text-align: center;
  border-radius: 0.2rem;
@@ -300,6 +303,7 @@ select:focus {
   url("../img/img1.jpg");
  margin-bottom: 2%;
 }
+
 .img2-box {
  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url("../img/img2.jpg");
@@ -362,7 +366,7 @@ select:focus {
 
 .service-item .service-icon {
  padding: 2rem;
- background-color: var(--lightGreenColor);
+ background-color: var(--primColor);
  border-radius: 100%;
  align-self: flex-start;
  border: none;
@@ -385,10 +389,11 @@ select:focus {
 
 /********** Section 3 Start **********/
 .sec3 h3 {
- font-size: 3rem;
+ font-size: 3.5rem;
  font-weight: 400;
  text-align: center;
  margin-bottom: 2rem;
+ color: var(--grayColor);
 }
 .sec3 .center {
  font-size: 1.4rem;
@@ -411,8 +416,8 @@ select:focus {
 }
 
 .text-wrapper {
- border-left: 1px solid #ebebeb;
- border-right: 1px solid #ebebeb;
+ border-left: 1px solid var(--borderColor);
+ border-right: 1px solid var(--borderColor);
 }
 
 .common-box .featured-title {
@@ -424,13 +429,15 @@ select:focus {
  font-size: 2rem;
  font-weight: 400;
  margin-bottom: 1rem;
+ color: var(--grayColor);
 }
 .common-box .featured-title p {
  font-size: 1.4rem;
  margin-bottom: 2rem;
+ color: var(--lightGrayColor);
 }
 .featured-icon {
- color: var(--lightGreenColor);
+ color: var(--primColor);
  margin-right: 1rem;
 }
 .room-info-wrapper {
@@ -441,7 +448,7 @@ select:focus {
  display: flex;
  justify-content: space-between;
  flex-flow: row wrap;
- border-top: 1px solid #ebebeb;
+ border-top: 1px solid var(--borderColor);
  padding-top: 2rem;
 }
 
@@ -455,7 +462,7 @@ select:focus {
 
 .common-box .room-price {
  text-align: center;
- background-color: var(--lightGreenColor);
+ background-color: var(--primColor);
  display: block;
  font-size: 1.8rem;
  font-weight: 600;
@@ -463,17 +470,21 @@ select:focus {
  padding: 1.3rem;
  margin-bottom: 5rem;
  cursor: pointer;
+ transition: all 0.3s ease-in-out;
+}
+.common-box .room-price:hover {
+ background-color: var(--hoverColor);
 }
 /********** Section 3 End **********/
 
 /********** Section 4 Start **********/
 .sec4 {
- background-color: #f7f7f7;
+ background-color: var(--bgColor);
  width: 100%;
  text-align: center;
 }
 .sec4 h3 {
- font-size: 3rem;
+ font-size: 3.5rem;
  font-weight: 400;
  color: var(--grayColor);
  margin-bottom: 2rem;
@@ -481,7 +492,7 @@ select:focus {
 }
 .sec4 p {
  font-size: 1.4rem;
- color: var(--secColor);
+ color: var(--lightGrayColor);
  margin-bottom: 3rem;
 }
 
@@ -496,7 +507,9 @@ select:focus {
 .property-gallery .common-property img {
  width: 100%;
  margin-bottom: 2rem;
+ cursor: pointer;
 }
+
 .property-gallery .common-property h5 {
  font-size: 2rem;
  font-weight: 400;
@@ -545,7 +558,7 @@ select:focus {
  right: 10px;
 }
 .testim .arrow:hover {
- color: var(--lightGreenColor);
+ color: var(--primColor);
 }
 .testim .dots {
  text-align: center;
@@ -571,8 +584,8 @@ select:focus {
 }
 .testim .dots .dot.active,
 .testim .dots .dot:hover {
- background: var(--lightGreenColor);
- border-color: var(--lightGreenColor);
+ background: var(--primColor);
+ border-color: var(--primColor);
 }
 
 .testim .dots .dot.active {
@@ -605,7 +618,7 @@ select:focus {
  border-radius: 50%;
 }
 .testim .cont div h2 {
- color: var(--lightGreenColor);
+ color: var(--primColor);
  font-size: 1.8rem;
  margin: 1.6rem 0;
 }
@@ -645,10 +658,10 @@ select:focus {
   box-shadow: 0px 0px 10px 5px var(--whiteColor);
  }
  70% {
-  box-shadow: 0px 0px 10px 5px var(--lightGreenColor);
+  box-shadow: 0px 0px 10px 5px var(--primColor);
  }
  100% {
-  box-shadow: 0px 0px 0px 0px var(--lightGreenColor);
+  box-shadow: 0px 0px 0px 0px var(--primColor);
  }
 }
 
@@ -702,7 +715,7 @@ select:focus {
  padding-bottom: 6rem;
 }
 .sec7 h3 {
- font-size: 3rem;
+ font-size: 3.5rem;
  font-weight: 400;
  color: var(--grayColor);
  margin-bottom: 2rem;
@@ -710,7 +723,7 @@ select:focus {
 }
 .sec7 p {
  font-size: 1.4rem;
- color: var(--secColor);
+ color: var(--lightGrayColor);
  margin-bottom: 3rem;
 }
 
@@ -732,6 +745,7 @@ select:focus {
  font-size: 2rem;
  margin-bottom: 2rem;
  font-weight: 500;
+ color: var(--grayColor);
 }
 .news-block .block-common h5 a {
  color: var(--grayColor);
@@ -745,15 +759,16 @@ select:focus {
 .news-time span {
  font-size: 1.2rem;
  margin-bottom: 2rem;
+ color: var(--grayColor);
 }
 .news-time .news-icon {
  margin-right: 0.5rem;
- color: var(--lightGreenColor);
+ color: var(--primColor);
 }
 
 .news-block p {
  font-size: 1.4rem;
- color: var(--grayColor);
+ color: var(--lightGrayColor);
  line-height: 2.2rem;
  margin-bottom: 4rem;
 }
@@ -801,7 +816,7 @@ select:focus {
 }
 .foot .main .social a {
  text-decoration: none;
- color: var(--lightGreenColor);
+ color: var(--primColor);
  font-size: 1.8rem;
 }
 
@@ -817,7 +832,7 @@ select:focus {
 }
 .contact .contact-icon {
  margin-right: 0.8rem;
- color: var(--lightGreenColor);
+ color: var(--primColor);
 }
 
 /* footer popular place */
@@ -864,7 +879,7 @@ select:focus {
  border: none;
 }
 .news-letter .news-input:focus {
- outline-color: var(--lightGreenColor);
+ outline-color: var(--primColor);
 }
 
 .news-letter .news-button {
@@ -872,8 +887,9 @@ select:focus {
  position: absolute;
  top: 0;
  right: 0;
- background-color: var(--lightGreenColor);
+ background-color: var(--primColor);
  border: none;
+ cursor: pointer;
 }
 
 /* copyright */
@@ -922,17 +938,20 @@ select:focus {
  font-size: 4rem;
  font-weight: 400;
  text-align: center;
- padding: 10rem;
+ padding: 12rem;
  letter-spacing: 0.1rem;
 }
 
 .top-notation {
  margin-bottom: 5rem;
 }
+.top-notation a {
+ color: var(--grayColor);
+}
 .top-icon {
  font-size: 1.5rem;
  margin-right: 1rem;
- color: var(--lightGreenColor);
+ color: var(--primColor);
 }
 .top-span {
  color: var(--grayColor);
@@ -942,7 +961,7 @@ select:focus {
 }
 .top-current:hover {
  text-decoration: underline;
- color: var(--lightGreenColor);
+ color: var(--primColor);
 }
 
 .pagination {
@@ -957,15 +976,15 @@ select:focus {
  padding: 0.8rem 1.6rem;
  text-decoration: none;
  transition: all 0.3s;
- border: 1px solid #888;
+ border: 1px solid var(--lightGrayColor);
  margin: 0 0.5rem;
  font-size: 1.5rem;
 }
 
 .pagination .current,
 .pagination a:hover {
- color: var(--lightGreenColor);
- border-color: var(--lightGreenColor);
+ color: var(--primColor);
+ border-color: var(--primColor);
 }
 /* common for all additional pages */
 
@@ -985,27 +1004,32 @@ select:focus {
 }
 
 .about-common h3 {
- font-size: 3rem;
- font-weight: 500;
+ font-size: 3.5rem;
+ font-weight: 400;
  margin-bottom: 4rem;
  letter-spacing: 0.1rem;
+ color: var(--grayColor);
 }
 .about-common p {
  font-size: 1.4rem;
  line-height: 2rem;
  letter-spacing: 0.1rem;
  margin-bottom: 4rem;
+ color: var(--lightGrayColor);
 }
 .quality {
  font-size: 1.4rem;
  line-height: 3rem;
  list-style-type: none;
 }
+.quality li {
+ color: var(--lightGrayColor);
+}
 .quality li:nth-child(4) {
  margin-bottom: 4rem;
 }
 .quality-icon {
- color: var(--lightGreenColor);
+ color: var(--primColor);
  margin-right: 0.4rem;
  font-size: 1.2rem;
 }
@@ -1017,15 +1041,15 @@ select:focus {
  padding-bottom: 6rem;
 }
 .about-sec3 h3 {
- font-size: 3rem;
- font-weight: 500;
+ font-size: 3.5rem;
+ font-weight: 400;
  color: var(--grayColor);
  margin-bottom: 2rem;
  padding-top: 10rem;
 }
 .about-sec3 p {
  font-size: 1.4rem;
- color: var(--secColor);
+ color: var(--lightGrayColor);
  margin-bottom: 3rem;
 }
 
@@ -1048,22 +1072,24 @@ select:focus {
  font-size: 2rem;
  font-weight: 400;
  margin-bottom: 1rem;
+ color: var(--grayColor);
 }
 
 .agent-gallery .agent-common p {
  font-size: 1.4rem;
  margin-bottom: 1rem;
  letter-spacing: 0.1rem;
+ color: var(--lightGrayColor);
 }
 
 .agent-hr {
  width: 15%;
  margin-bottom: 3rem;
- color: var(--lightGreenColor);
+ color: var(--primColor);
 }
 
 .agent-icon {
- color: var(--lightGreenColor);
+ color: var(--primColor);
  margin-right: 0.9rem;
 }
 /**********  "About" Page 2 End **********/
@@ -1083,16 +1109,19 @@ select:focus {
 }
 .contact-common img {
  width: 100%;
+ height: 100%;
  margin-bottom: 3rem;
 }
 .contact-common h3 {
- font-size: 3rem;
+ font-size: 3.5rem;
  font-weight: 400;
- margin-bottom: 2rem;
+ margin-bottom: 1rem;
+ color: var(--grayColor);
 }
 .contact-common p {
  font-size: 1.4rem;
  margin-bottom: 2rem;
+ color: var(--lightGrayColor);
 }
 
 .form-group {
@@ -1103,22 +1132,23 @@ select:focus {
  width: 48%;
  margin-bottom: 2rem;
  padding: 1rem 1.5rem;
- border: 1px solid var(--lightGrayColor);
+ border: 1px solid var(--primColor);
 }
 
 .contact-page-form textarea {
  display: block;
  width: 100%;
- margin-bottom: 2rem;
+ margin-bottom: 3.5rem;
  padding: 1rem 1.5rem;
 }
 
 .form-group .contact-input:focus {
- border-color: var(--lightGreenColor);
+ border-color: var(--primColor);
 }
 
 .contact-page-form textarea:focus {
- outline-color: var(--lightGreenColor);
+ border-color: var(--primColor);
+ outline: none;
 }
 
 .submit {
@@ -1157,13 +1187,13 @@ select:focus {
  /* navbar active then navlink (a)hover color and current color */
  .navbar.active .nav-link:hover,
  .navbar.active .nav-link.current {
-  color: var(--lightGreenColor);
+  color: var(--primColor);
  }
 
  /* when navbar active and sticky in both condition hamburger color */
  .navbar.active .hamburger .bar,
  .navbar.sticky .hamburger .bar {
-  background-color: var(--lightGreenColor);
+  background-color: var(--primColor);
  }
 
  /* when navabr active then logo and navlinkcolo */
@@ -1174,7 +1204,11 @@ select:focus {
 
  /* when navbar sticky nav-menu (ul ) */
  .navbar.sticky .nav-menu {
-  top: 9rem;
+  top: 8rem;
+ }
+
+ .navbar.sticky {
+  padding: 3rem;
  }
 
  /********** Navbar active and Sticky Condition for small screen**********/
@@ -1184,10 +1218,10 @@ select:focus {
  /* nav-menu */
  .nav-menu {
   position: fixed;
-  top: 10rem;
+  top: 9rem;
   left: -100%;
   width: 100%;
-  height: 90%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   background-color: var(--grayColor);
@@ -1231,7 +1265,7 @@ select:focus {
   flex-direction: column;
  }
 
- input {
+ .filter-search input {
   width: 100%;
   padding: 1rem;
  }
@@ -1420,6 +1454,9 @@ select:focus {
 
  /********** All Additional Pages Media Query (Which are new) Start From Here  **********/
 
+ .new-tag h3 {
+  font-size: 2rem;
+ }
  /********** About**********/
  .about-info {
   flex-flow: column nowrap;

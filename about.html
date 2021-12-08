@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | Real Estate</title>
+
+  <!-- Aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -203,7 +207,13 @@
    <p>Our directory of real estate agents who can help you</p>
    <div class="container">
     <div class="agent-gallery">
-     <div class="agent-one agent-common">
+     <div
+      class="agent-one agent-common"
+      data-aos="fade-right"
+      data-aos-duration="7000"
+      data-aos-delay="500"
+      data-aos-easing="ease-in"
+     >
       <img src="./img/test1.jpg" alt="" />
       <h5>Sasha Gordon</h5>
       <p>Researcher</p>
@@ -213,7 +223,13 @@
        <i class="fa fa-envelope agent-icon"></i>sashagordon@gmail.com
       </p>
      </div>
-     <div class="agent-two agent-common">
+     <div
+      class="agent-two agent-common"
+      data-aos="fade-right"
+      data-aos-duration="7000"
+      data-aos-delay="400"
+      data-aos-easing="ease-in"
+     >
       <img src="./img/test2.jpg" alt="" />
       <h5>Tony Holland</h5>
       <p>Real Estate Agent</p>
@@ -223,7 +239,13 @@
        <i class="fa fa-envelope agent-icon"></i>tonyholland@gmail.com
       </p>
      </div>
-     <div class="agent-three agent-common">
+     <div
+      class="agent-three agent-common"
+      data-aos="fade-left"
+      data-aos-duration="7000"
+      data-aos-delay="400"
+      data-aos-easing="ease-in"
+     >
       <img src="./img/test3.jpg" alt="" />
       <h5>Gina Wesley</h5>
       <p>Real Estate Agent</p>
@@ -233,7 +255,13 @@
        <i class="fa fa-envelope agent-icon"></i>ginawesley@gmail.com
       </p>
      </div>
-     <div class="agent-four agent-common">
+     <div
+      class="agent-four agent-common"
+      data-aos="fade-left"
+      data-aos-duration="7000"
+      data-aos-delay="500"
+      data-aos-easing="ease-in"
+     >
       <img src="./img/test5.jpg" alt="" />
       <h5>Nicky Butt</h5>
       <p>Real Estate Agent</p>
@@ -335,6 +363,12 @@
   </footer>
   <!--********** Section 8 End Footer**********-->
 
+  <!-- Aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Aos Initialize -->
+  <script>
+   AOS.init();
+  </script>
   <script src="./app.js"></script>
  </body>
 </html>
