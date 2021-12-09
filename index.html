@@ -5,8 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Real Estate</title>
-  <!-- Aos -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +23,7 @@
  <body>
   <!--********** Header Start **********-->
   <header class="head">
+   <!-- navbar -->
    <nav class="navbar">
     <div class="logo">
      <h1>up<span class="green">Town</span></h1>
@@ -51,6 +50,7 @@
       >
      </li>
     </ul>
+    <!-- hamburger -->
     <div class="hamburger">
      <span class="bar"></span>
      <span class="bar"></span>
@@ -100,12 +100,7 @@
    <div class="container">
     <div class="recent-sale">
      <!-- box 1 / property 1 -->
-     <div
-      class="img1-box common-img"
-      data-aos="fade-right"
-      data-aos-duration="7000"
-      data-aos-easing="ease-in"
-     >
+     <div class="img1-box common-img">
       >
       <div class="sale-status-sale">FOR SALE</div>
       <div class="property-info">
@@ -117,12 +112,7 @@
       </div>
      </div>
      <!-- box 2 / property 2 -->
-     <div
-      class="img2-box common-img"
-      data-aos="fade-left"
-      data-aos-duration="7000"
-      data-aos-easing="ease-in"
-     >
+     <div class="img2-box common-img">
       <div class="sale-status-rent">FOR RENT</div>
       <div class="property-info">
        <div class="info">
@@ -134,12 +124,7 @@
      </div>
 
      <!-- box 3 / property 3 -->
-     <div
-      class="img3-box common-img"
-      data-aos="fade-right"
-      data-aos-duration="7000"
-      data-aos-easing="ease-in"
-     >
+     <div class="img3-box common-img">
       <div class="sale-status-sale">FOR SALE</div>
       <div class="property-info">
        <div class="info">
@@ -153,12 +138,7 @@
      </div>
 
      <!-- box 4 / property 4 -->
-     <div
-      class="img4-box common-img"
-      data-aos="fade-left"
-      data-aos-duration="7000"
-      data-aos-easing="ease-in"
-     >
+     <div class="img4-box common-img">
       <div class="sale-status-rent">FOR RENT</div>
       <div class="property-info">
        <div class="info">
@@ -180,6 +160,7 @@
   <section class="sec2">
    <div class="container">
     <div class="service">
+     <!-- service img -->
      <div class="service-img">
       <img src="./img/service1.webp" alt="" />
      </div>
@@ -188,13 +169,7 @@
       <h3>Our Services</h3>
       <p>We provide the perfect service for</p>
 
-      <div
-       class="service-item"
-       data-aos="fade-left"
-       data-aos-duration="5000"
-       data-aos-easing="ease-in"
-       data-aos-delay="100"
-      >
+      <div class="service-item">
        <i class="fas fa-comments service-icon"></i>
 
        <div class="service-item-text">
@@ -205,13 +180,7 @@
         </p>
        </div>
       </div>
-      <div
-       class="service-item"
-       data-aos="fade-left"
-       data-aos-duration="5000"
-       data-aos-easing="ease-in"
-       data-aos-delay="200"
-      >
+      <div class="service-item">
        <i class="fas fa-home service-icon"></i>
        <div class="service-item-text">
         <h5>Properties Management</h5>
@@ -221,13 +190,7 @@
         </p>
        </div>
       </div>
-      <div
-       class="service-item"
-       data-aos="fade-left"
-       data-aos-duration="5000"
-       data-aos-easing="ease-in"
-       data-aos-delay="300"
-      >
+      <div class="service-item">
        <i class="fas fa-briefcase service-icon"></i>
 
        <div class="service-item-text">
@@ -510,43 +473,19 @@
    <p>What kind of property are you looking for? We will help you</p>
    <div class="container">
     <div class="property-gallery">
-     <div
-      class="property1 common-property"
-      data-aos="zoom-in"
-      data-aos-delay="200"
-      data-aos-duration="5000"
-      data-aos-easing="ease-in"
-     >
+     <div class="property1 common-property">
       <img src="./img/img11.jpg" alt="" />
       <h5>Apartment for rent</h5>
      </div>
-     <div
-      class="property2 common-property"
-      data-aos="zoom-in"
-      data-aos-delay="100"
-      data-aos-duration="5000"
-      data-aos-easing="ease-in""
-     >
+     <div class="property2 common-property">
       <img src="./img/img12.jpg" alt="" />
       <h5>Family Home</h5>
      </div>
-     <div
-      class="property3 common-property"
-      data-aos="zoom-in"
-      data-aos-delay="100"
-      data-aos-duration="5000"
-      data-aos-easing="ease-in"
-     >
+     <div class="property3 common-property">
       <img src="./img/img13.jpg" alt="" />
       <h5>Resort Villas</h5>
      </div>
-     <div
-      class="property4 common-property"
-      data-aos="zoom-in"
-      data-aos-delay="200"
-      data-aos-duration="5000"
-      data-aos-easing="ease-in"
-     >
+     <div class="property4 common-property">
       <img src="./img/img14.jpg" alt="" />
       <h5>Office Building</h5>
      </div>
@@ -790,12 +729,6 @@
   <!--********** Section 8 End Footer**********-->
   <section class="sec9"></section>
 
-  <!-- Aos js -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Aos Initialize -->
-  <script>
-   AOS.init();
-  </script>
   <!-- main js -->
   <script src="app.js"></script>
  </body>

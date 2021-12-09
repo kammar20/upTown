@@ -66,6 +66,7 @@ textarea {
  position: relative;
  transition: all 0.3s ease-in-out;
 }
+
 .logo .green {
  color: var(--primColor);
 }
@@ -115,10 +116,9 @@ textarea {
  height: 0.3rem;
  margin: 0.5rem auto;
  transition: all 0.3s ease-in-out;
- /* position: relative; */
 }
 
-/* for sticky navar bar big screen style */
+/* for sticky navar bar big screen style start*/
 /* for navbar */
 .navbar.sticky {
  padding: 3rem 4rem;
@@ -137,7 +137,7 @@ textarea {
 .navbar.sticky .nav-link.current {
  color: var(--primColor);
 }
-/* for sticky navar bar big screen style */
+/* for sticky navar bar big screen style end */
 
 /* tagline */
 .tag-line {
@@ -145,10 +145,12 @@ textarea {
  text-align: center;
  color: var(--whiteColor);
 }
+
 .tag-line h2 {
  font-size: 3.6rem;
  margin-bottom: 2rem;
 }
+
 .tag-line p {
  font-size: 2.2rem;
  margin-bottom: 4rem;
@@ -169,20 +171,20 @@ textarea {
  background-color: var(--primColor);
  transition: all 0.3s ease-in-out;
 }
+
 .btn-style:hover {
  background-color: transparent;
  border: 2px solid var(--primColor);
 }
-
 /********** Header End **********/
 
 /********** filter search Start **********/
-
 .filter-search {
  position: relative;
  top: -9.5rem;
  z-index: 1;
 }
+
 .filter-form {
  display: flex;
  gap: 3rem;
@@ -190,12 +192,14 @@ textarea {
  padding: 3rem;
  border-radius: 0.3rem;
 }
+
 .filter-search input {
  width: 50%;
  border: none;
  border-radius: 0.3rem;
  padding: 0.1rem 1rem;
 }
+
 select {
  width: 25%;
  border: none;
@@ -203,6 +207,7 @@ select {
  border-radius: 0.3rem;
  padding: 0.1rem 1rem;
 }
+
 input:focus,
 select:focus {
  outline: 1px solid var(--primColor);
@@ -210,7 +215,6 @@ select:focus {
 /********** filter search End **********/
 
 /********** Section 1 Start **********/
-
 .sec1-recent-property h3 {
  font-size: 3.5rem;
  text-align: center;
@@ -218,6 +222,7 @@ select:focus {
  margin-bottom: 1.5rem;
  color: var(--grayColor);
 }
+
 .sec1-recent-property p {
  font-size: 1.4rem;
  text-align: center;
@@ -250,6 +255,7 @@ select:focus {
  font-weight: 700;
  margin: 2.5rem;
 }
+
 .common-img .sale-status-rent {
  display: inline-block;
  background-color: #ffa500;
@@ -269,6 +275,7 @@ select:focus {
  justify-content: space-between;
  padding: 2rem;
 }
+
 .common-img .property-info .info h5 {
  font-size: 2rem;
  color: var(--whiteColor);
@@ -395,21 +402,25 @@ select:focus {
  margin-bottom: 2rem;
  color: var(--grayColor);
 }
+
 .sec3 .center {
  font-size: 1.4rem;
  text-align: center;
  margin-bottom: 5rem;
  color: var(--lightGrayColor);
 }
+
 .sec3-featured {
  display: flex;
  justify-content: space-between;
  flex-flow: row wrap;
 }
+
 /* common style */
 .sec3-featured .common-box {
  width: 32%;
 }
+
 .sec3-featured .common-box img {
  width: 100%;
  vertical-align: bottom;
@@ -431,15 +442,18 @@ select:focus {
  margin-bottom: 1rem;
  color: var(--grayColor);
 }
+
 .common-box .featured-title p {
  font-size: 1.4rem;
  margin-bottom: 2rem;
  color: var(--lightGrayColor);
 }
+
 .featured-icon {
  color: var(--primColor);
  margin-right: 1rem;
 }
+
 .room-info-wrapper {
  padding: 2.5rem;
 }
@@ -472,6 +486,7 @@ select:focus {
  cursor: pointer;
  transition: all 0.3s ease-in-out;
 }
+
 .common-box .room-price:hover {
  background-color: var(--hoverColor);
 }
@@ -483,6 +498,7 @@ select:focus {
  width: 100%;
  text-align: center;
 }
+
 .sec4 h3 {
  font-size: 3.5rem;
  font-weight: 400;
@@ -490,6 +506,7 @@ select:focus {
  margin-bottom: 2rem;
  padding-top: 7rem;
 }
+
 .sec4 p {
  font-size: 1.4rem;
  color: var(--lightGrayColor);
@@ -501,9 +518,11 @@ select:focus {
  justify-content: space-between;
  text-align: center;
 }
+
 .property-gallery .common-property {
  width: 24%;
 }
+
 .property-gallery .common-property img {
  width: 100%;
  margin-bottom: 2rem;
@@ -530,12 +549,14 @@ select:focus {
  background-image: url("../img/test-bg.jpg");
  background-size: cover;
 }
+
 .testim .wrap {
  position: relative;
  width: 100%;
  padding: 2rem 2rem;
  margin: auto;
 }
+
 .testim .arrow {
  display: block;
  position: absolute;
@@ -548,18 +569,23 @@ select:focus {
  padding: 0.5rem;
  z-index: 1;
 }
+
 .testim .arrow:before {
  cursor: pointer;
 }
+
 .testim .arrow.left {
  left: 10px;
 }
+
 .testim .arrow.right {
  right: 10px;
 }
+
 .testim .arrow:hover {
  color: var(--primColor);
 }
+
 .testim .dots {
  text-align: center;
  position: absolute;
@@ -570,6 +596,7 @@ select:focus {
  z-index: 2;
  height: 12px;
 }
+
 .testim .dots .dot {
  list-style-type: none;
  display: inline-block;
@@ -582,6 +609,7 @@ select:focus {
  transition: all 0.5s ease-in-out;
  position: relative;
 }
+
 .testim .dots .dot.active,
 .testim .dots .dot:hover {
  background: var(--primColor);
@@ -591,10 +619,12 @@ select:focus {
 .testim .dots .dot.active {
  animation: testim-scale 0.3s ease-in-out forwards;
 }
+
 .testim .cont {
  position: relative;
  overflow: hidden;
 }
+
 .testim .cont > div {
  text-align: center;
  position: absolute;
@@ -603,9 +633,11 @@ select:focus {
  padding: 0 0 7rem 0;
  opacity: 0;
 }
+
 .testim .cont > div.inactive {
  opacity: 1;
 }
+
 .testim .cont > div.active {
  position: relative;
  opacity: 1;
@@ -617,11 +649,13 @@ select:focus {
  margin: auto;
  border-radius: 50%;
 }
+
 .testim .cont div h2 {
  color: var(--primColor);
  font-size: 1.8rem;
  margin: 1.6rem 0;
 }
+
 .testim .cont div p {
  font-size: 1.4rem;
  color: var(--whiteColor);
@@ -634,18 +668,23 @@ select:focus {
 .testim .cont div.active .img img {
  animation: testim-show 0.5s ease-in-out forwards;
 }
+
 .testim .cont div.active h2 {
  animation: testim-content-in 0.5s ease-in-out forwards;
 }
+
 .testim .cont div.active p {
  animation: testim-content-in 0.5s ease-in-out forwards;
 }
+
 .testim .cont div.inactive .img img {
  animation: testim-hide 0.5s ease-in-out forwards;
 }
+
 .testim .cont div.inactive h2 {
  animation: testim-content-out 0.5s ease-in-out forwards;
 }
+
 .testim .cont div.inactive p {
  animation: testim-content-out 0.5s ease-in-out forwards;
 }
@@ -924,7 +963,6 @@ select:focus {
 /********** Section 8 End Footer **********/
 
 /********** All Additional Pages Styling (Which are new) Start From Here  **********/
-
 /* common for all additional pages */
 .new-head {
  background-image: url("../img/feature-bg.webp");
@@ -1109,7 +1147,6 @@ select:focus {
 }
 .contact-common img {
  width: 100%;
- height: 100%;
  margin-bottom: 3rem;
 }
 .contact-common h3 {
@@ -1229,7 +1266,7 @@ select:focus {
  }
 
  .nav-list {
-  margin: 3rem auto;
+  margin: 2.5rem auto;
   text-align: center;
  }
 
@@ -1251,11 +1288,11 @@ select:focus {
 
  /* tagline */
  .tag-line h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
  }
 
  .tag-line p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
  }
 
  /********** Header End **********/
@@ -1277,6 +1314,9 @@ select:focus {
  /********** Filter Form  End **********/
 
  /********** Section1 Start recent property **********/
+ .sec1-recent-property h3 {
+  font-size: 3rem;
+ }
  .sec1-recent-property p {
   margin-bottom: 2rem;
   font-size: 1.2rem;
@@ -1328,14 +1368,23 @@ select:focus {
   width: 100%;
  }
 
+ .service .service-title h3 {
+  font-size: 3rem;
+ }
+
  .service-item .service-item-text p {
+  font-size: 1.2rem;
   margin-bottom: 4rem;
  }
  /********** Section2 End **********/
 
  /********** Section3 Start fearure listing**********/
  .sec3 h3 {
+  font-size: 3rem;
   padding-top: 5rem;
+ }
+ .sec3 .center {
+  font-size: 1.2rem;
  }
  .sec3-featured {
   flex-flow: column nowrap;
@@ -1347,6 +1396,12 @@ select:focus {
 
  /********** Section4 Start looking for Property**********/
 
+ .sec4 h3 {
+  font-size: 3rem;
+ }
+ .sec4 {
+  font-size: 1.2rem;
+ }
  .property-gallery {
   flex-flow: column nowrap;
  }
@@ -1379,6 +1434,12 @@ select:focus {
  .sec7 {
   padding-bottom: 3rem;
  }
+ .sec7 h3 {
+  font-size: 3rem;
+ }
+ .sec7 p {
+  font-size: 1.2rem;
+ }
  .news-block {
   flex-flow: column nowrap;
  }
@@ -1387,6 +1448,10 @@ select:focus {
  }
  .news-block .block-common img {
   margin-bottom: 2rem;
+ }
+
+ .news-block .block-common h5 a {
+  font-size: 1.8rem;
  }
  .news-block p {
   margin-bottom: 5rem;
