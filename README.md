@@ -1,4 +1,4 @@
-# Real_Estate_upTown
+# upTown
 upTown is a professional property listing website template for real estate business.
 This will help you save plenty of time and energy, as many page layouts and components are available out of the box.
 upTown also sorts out mobile-readiness and cross-browser compatibility for your convenience.
