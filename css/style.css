@@ -941,9 +941,17 @@ select:focus {
  display: flex;
  justify-content: space-between;
 }
+
 .copyright p {
  font-size: 1.4rem;
 }
+
+.copyright p a {
+ color: var(--whiteColor);
+ font-weight: 700;
+ text-decoration: none;
+}
+
 .footer-menu {
  display: flex;
 }
