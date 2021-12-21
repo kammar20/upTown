@@ -48,7 +48,7 @@ textarea {
  display: flex;
  justify-content: space-between;
  align-items: center;
- padding: 4rem 4rem;
+ padding: 4rem;
  z-index: 4;
  position: fixed;
  top: 0;
@@ -1225,6 +1225,14 @@ select:focus {
  }
 
  /* navbar when active on small screen*/
+ .navbar {
+  padding: 3rem 2rem;
+ }
+
+ .navbar.sticky {
+  padding: 3rem 2rem;
+ }
+
  .navbar.active {
   background-color: var(--grayColor);
  }
@@ -1250,10 +1258,6 @@ select:focus {
  /* when navbar sticky nav-menu (ul ) */
  .navbar.sticky .nav-menu {
   top: 8rem;
- }
-
- .navbar.sticky {
-  padding: 3rem;
  }
 
  /********** Navbar active and Sticky Condition for small screen**********/
